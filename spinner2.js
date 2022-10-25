@@ -1,6 +1,6 @@
 const spinnerArr = [ '\r|   ', '\r/   ', '\r-   ', '\r\\    ','\r|   ', '\r/   ', '\r-   ', '\r\\    ', '\r|   ' ];
 
-function loadingTik() {
+const loadingTik = function() {
   process.stdout.write('hello from spinner2.js...  \rheyyy\n');
   let timer = 0;
   for (const i in spinnerArr) {
@@ -12,6 +12,6 @@ function loadingTik() {
     }, timer);
     timer += 200;
   }
-}
+};
 
-loadingTik()
+loadingTik();
